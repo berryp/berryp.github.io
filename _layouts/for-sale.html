@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <script src="/assets/js/modal.js"></script>
+    <link rel="stylesheet" href="/assets/css/pico.min.css">
+    <style>
+        button {
+            padding: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container" data-theme="dark">
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <section>
+            <h2>{{ page.subtitle }}</h2>
+            <ul>
+                {% if page.link %}<li><a href="{{ page.link }}" target="_blank">Official product page</a></li>{% endif
+                %}
+                {% for highlight in page.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h2>Details</h2>
+            {{ content }}
+        </section>
+
+        <header>
+            <h2>Gallery</h2>
+        </header>
+        <section>
+            {% for group in page.imageGroups %}
+            <div class="grid">
+                {% for image in group %}
+                <div>
+                    <button class="contrast inline" data-target="modal-{{ image.name }}" onclick="toggleModal(event)">
+                        <img class="image" src="/assets/img/guitar-for-sale/sm/{{ image.name }}.{{ page.imageExtension }}"
+                            alt="{{ image.name }}" />
+                    </button>
+                    <dialog id="modal-{{ image.name }}">
+                        <article>
+                            <a href="#close" aria-label="Close" data-target="modal-{{ image.name }}" class="close"
+                                onclick="toggleModal(event)"></a>
+                            <h3>{{ image.title }}</h3>
+                            <p>
+                                <img src="/assets/img/guitar-for-sale/lg/{{ image.name }}.{{ page.imageExtension }}"
+                                    data-target="modal-{{ image.name }}" onclick="toggleModal(event)" />
+                            </p>
+                        </article>
+                    </dialog>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+
+</html>
