@@ -4,12 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guitar for sale</title>
+    <title>Acoustic guitar for sale</title>
     <script src="/assets/js/modal.js"></script>
     <link rel="stylesheet" href="/assets/css/pico.min.css">
     <style>
+        body {
+        --color-red: #d04255;
+        --color-yellow: #e5b567;
+        --color-green: #a8c373;
+        --color-orange: #d5763f;
+        --color-cyan: #73bbb2;
+        --color-blue: #6c99bb;
+        --color-purple: #9e86c8;
+        --color-pink: #b05279;
+        --typography-spacing-vertical: 1rem;
+        }
+        [data-theme=dark] {
+            --h1-color: var(--color-red);
+            --h2-color: var(--color-orange);
+            --h3-color: var(--color-yellow);
+            --h4-color: var(--color-green);
+            --h5-color: var(--color-blue);
+            --h6-color: var(--color-purple);
+        }
+        .container {
+            max-width: 920px;
+        }
         button {
-            padding: 5px
+            padding: 5px 5px;
+        }
+        h1 {
+            --typography-spacing-vertical: 1rem;
+        }
+        h2, h3, h4 {
+            --typography-spacing-vertical: 1.5rem;
+        }
+        h2, article {
+            --typography-spacing-vertical: 1rem;
+            --block-spacing-vertical: 2rem;
+        }
+        article.banner {
+            --background-color: var(--primary);
+            --border-color: var(--primary);
+            --color: var(--primary-inverse);
+            border: var(--border-width) solid var(--border-color);
+            padding: 20px 20px;
+        }
+        article.banner h3 {
+            margin-bottom: 10px;
+        }
+        article.banner p {
+            margin-bottom: 0;
+        }
+        article.banner img {
+            object-fit: cover;
+            width: 100px;
+            height: 100px;
+            grid-column: span 1;
+            border-radius: var(--border-radius);
+            border: solid 1px #fff;
+            box-shadow: var(--box-shadow);
+        }
+        article.banner div {
+            grid-column: span 6;
         }
     </style>
 </head>
@@ -17,17 +74,29 @@
 <body>
     <main class="container" data-theme="dark">
         <header>
-            <h1>Guitar for sale</h1>
+            <h1>Acoustic guitar for sale</h1>
+            <p>
+                <code>Berry Phillips [ <a href="mailto:berryphillips@gmail.com?subject=Acoustic guitar for sale&body=HEX Sting F300 M Acoustic Guitar for 100,000₩">berryphillips@gmail.com</a> ]</code>
+            </p>
         </header>
 
+        <article class="banner secondary">
+            <div class="grid">
+                <img src="IMG_6266_SM.jpeg" alt="HEX Sting F300 M Acoustic Guitar">
+                <div>
+                    <h3>HEX Sting F300 M Acoustic Guitar</h3>
+                    <kbd>100,000₩</kbd>
+                </div>
+            </div>
+        </article>
+        
         <section>
-            <h2></h2>
             <ul>
                 <li><a href="https://hexguitars.com/product/f300-m/83/" target="_blank">Official product page</a></li>
                 
                 <li>Full and bright sound</li>
                 
-                <li>Original price KRW 259,000</li>
+                <li>Original price 259,000₩</li>
                 
                 <li>New high quality long lasting strings</li>
                 
@@ -37,13 +106,11 @@
                 
                 <li>Barely used and protected from sunlight and humidity</li>
                 
-                <li>Includes stand</li>
+                <li>Includes collapsible stand</li>
                 
             </ul>
-        </section>
 
-        <section>
-            <h2>Details</h2>
+            <h4>Description</h4>
             <p>HEX F300 M acoustic guitar that has had only light use. Well looked after and in excellent condition with the exception of minor cosmetic damage on the back bottom edge.</p>
 
 <p>Despite being a relatively low cost guitar it produces are very well balanced and full sound, with the new strings adding an extra brightness. The guitar is barely used and kept away from direct sunlight and humidity.</p>
@@ -52,18 +119,14 @@
 
 <p>Sad to be selling as it’s more than just an instrument to me, but I barely use it and feel it would be better off in the hands of someone who will get more use out of it.</p>
 
-        </section>
 
-        <header>
-            <h2>Gallery</h2>
-        </header>
-        <section>
+            <h4>Gallery</h4>
             
             <div class="grid">
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6269" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6269.jpeg"
+                        <img class="image" src="IMG_6269_SM.jpeg"
                             alt="IMG_6269" />
                     </button>
                     <dialog id="modal-IMG_6269">
@@ -72,7 +135,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Front</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6269.jpeg"
+                                <img src="IMG_6269_LG.jpeg"
                                     data-target="modal-IMG_6269" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -81,7 +144,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6273" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6273.jpeg"
+                        <img class="image" src="IMG_6273_SM.jpeg"
                             alt="IMG_6273" />
                     </button>
                     <dialog id="modal-IMG_6273">
@@ -90,7 +153,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Back</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6273.jpeg"
+                                <img src="IMG_6273_LG.jpeg"
                                     data-target="modal-IMG_6273" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -99,7 +162,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6268" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6268.jpeg"
+                        <img class="image" src="IMG_6268_SM.jpeg"
                             alt="IMG_6268" />
                     </button>
                     <dialog id="modal-IMG_6268">
@@ -108,7 +171,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Headstock</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6268.jpeg"
+                                <img src="IMG_6268_LG.jpeg"
                                     data-target="modal-IMG_6268" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -117,7 +180,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6274" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6274.jpeg"
+                        <img class="image" src="IMG_6274_SM.jpeg"
                             alt="IMG_6274" />
                     </button>
                     <dialog id="modal-IMG_6274">
@@ -126,7 +189,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Headstock back</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6274.jpeg"
+                                <img src="IMG_6274_LG.jpeg"
                                     data-target="modal-IMG_6274" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -139,7 +202,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6265" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6265.jpeg"
+                        <img class="image" src="IMG_6265_SM.jpeg"
                             alt="IMG_6265" />
                     </button>
                     <dialog id="modal-IMG_6265">
@@ -148,7 +211,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Bridge</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6265.jpeg"
+                                <img src="IMG_6265_LG.jpeg"
                                     data-target="modal-IMG_6265" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -157,7 +220,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6266" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6266.jpeg"
+                        <img class="image" src="IMG_6266_SM.jpeg"
                             alt="IMG_6266" />
                     </button>
                     <dialog id="modal-IMG_6266">
@@ -166,7 +229,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Rosette</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6266.jpeg"
+                                <img src="IMG_6266_LG.jpeg"
                                     data-target="modal-IMG_6266" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -175,7 +238,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6275" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6275.jpeg"
+                        <img class="image" src="IMG_6275_SM.jpeg"
                             alt="IMG_6275" />
                     </button>
                     <dialog id="modal-IMG_6275">
@@ -184,7 +247,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Cosmetic damage</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6275.jpeg"
+                                <img src="IMG_6275_LG.jpeg"
                                     data-target="modal-IMG_6275" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -197,7 +260,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6295" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6295.jpeg"
+                        <img class="image" src="IMG_6295_SM.jpeg"
                             alt="IMG_6295" />
                     </button>
                     <dialog id="modal-IMG_6295">
@@ -206,7 +269,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Soft case</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6295.jpeg"
+                                <img src="IMG_6295_LG.jpeg"
                                     data-target="modal-IMG_6295" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -215,7 +278,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6296" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6296.jpeg"
+                        <img class="image" src="IMG_6296_SM.jpeg"
                             alt="IMG_6296" />
                     </button>
                     <dialog id="modal-IMG_6296">
@@ -224,7 +287,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Softcase back</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6296.jpeg"
+                                <img src="IMG_6296_LG.jpeg"
                                     data-target="modal-IMG_6296" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -233,7 +296,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6293" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6293.jpeg"
+                        <img class="image" src="IMG_6293_SM.jpeg"
                             alt="IMG_6293" />
                     </button>
                     <dialog id="modal-IMG_6293">
@@ -242,7 +305,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Strings screenshot</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6293.jpeg"
+                                <img src="IMG_6293_LG.jpeg"
                                     data-target="modal-IMG_6293" onclick="toggleModal(event)" />
                             </p>
                         </article>
@@ -251,7 +314,7 @@
                 
                 <div>
                     <button class="contrast inline" data-target="modal-IMG_6294" onclick="toggleModal(event)">
-                        <img class="image" src="/assets/img/guitar-for-sale/sm/IMG_6294.jpeg"
+                        <img class="image" src="IMG_6294_SM.jpeg"
                             alt="IMG_6294" />
                     </button>
                     <dialog id="modal-IMG_6294">
@@ -260,7 +323,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>Guitar screenshot</h3>
                             <p>
-                                <img src="/assets/img/guitar-for-sale/lg/IMG_6294.jpeg"
+                                <img src="IMG_6294_LG.jpeg"
                                     data-target="modal-IMG_6294" onclick="toggleModal(event)" />
                             </p>
                         </article>

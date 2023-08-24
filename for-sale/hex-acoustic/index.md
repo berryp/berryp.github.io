@@ -1,9 +1,10 @@
 ---
-title: Guitar for sale
-subTitle: HEX Sting F300 M Acoustic Guitar
+title: Acoustic guitar for sale
+subtitle: HEX Sting F300 M Acoustic Guitar
 layout: for-sale
+image: IMG_6266_SM.jpeg
 imageExtension: jpeg
-imageGroups:
+gallery:
     -
         - name: IMG_6269
           title: Front
@@ -33,12 +34,13 @@ imageGroups:
 link: https://hexguitars.com/product/f300-m/83/
 highlights:
     - Full and bright sound
-    - Original price KRW 259,000
+    - Original price 259,000₩
     - New high quality long lasting strings
     - Official soft carry case
     - Minor cosmetic damage on the back bottom edge
     - Barely used and protected from sunlight and humidity
-    - Includes stand
+    - Includes collapsible stand
+price: 100,000₩
 ---
 
 HEX F300 M acoustic guitar that has had only light use. Well looked after and in excellent condition with the exception of minor cosmetic damage on the back bottom edge.
