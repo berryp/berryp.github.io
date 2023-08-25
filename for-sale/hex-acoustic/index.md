@@ -36,10 +36,11 @@ highlights:
     - Full and bright sound
     - Original price 259,000₩
     - New high quality long lasting strings
-    - Official soft carry case
-    - Minor cosmetic damage on the back bottom edge
-    - Barely used and protected from sunlight and humidity
-    - Includes collapsible stand
+    - Includes gig bag and foldable atand
+    - Minor cosmetic damage on the back bottom edge 
+    - Barely used
+    - Kept safe away from sunlight and humidity
+    - Price reduced by 30,000 to account for cosmetic damange
 price: 100,000₩
 ---
 
