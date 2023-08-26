@@ -1,5 +1,5 @@
 ---
-title: iMac for sale
+title: 27" iMac for sale
 subtitle: iMac 27" Retina 5K 3.3 GHz (Late 2015)
 layout: for-sale
 imageExtension: jpeg

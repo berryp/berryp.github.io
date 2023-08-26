@@ -86,15 +86,6 @@
         </article>
         
         <section>
-            <ul>
-                {% if page.link %}<li><a href="{{ page.link }}" target="_blank">Official product page</a></li>{% endif
-                %}
-                {% for highlight in page.highlights %}
-                <li>{{ highlight }}</li>
-                {% endfor %}
-            </ul>
-
-            <h4>Description</h4>
             {{ content }}
 
             <h4>Gallery</h4>
@@ -103,7 +94,7 @@
                 {% for image in group %}
                 <div>
                     <button class="contrast inline" data-target="modal-{{ image.name }}" onclick="toggleModal(event)">
-                        <img class="image" src="{{ image.name }}_SM.{{ page.imageExtension }}"
+                        <img class="image" src="images/{{ image.name }}_SM.{{ page.imageExtension }}"
                             alt="{{ image.name }}" />
                     </button>
                     <dialog id="modal-{{ image.name }}">
@@ -112,7 +103,7 @@
                                 onclick="toggleModal(event)"></a>
                             <h3>{{ image.title }}</h3>
                             <p>
-                                <img src="{{ image.name }}_LG.{{ page.imageExtension }}"
+                                <img src="images/{{ image.name }}_LG.{{ page.imageExtension }}"
                                     data-target="modal-{{ image.name }}" onclick="toggleModal(event)" />
                             </p>
                         </article>
