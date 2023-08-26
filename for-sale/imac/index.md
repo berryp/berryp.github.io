@@ -27,7 +27,7 @@ gallery:
       title: Inside case
     - name: IMG_6374
       title: Storage space
-price: 500,000₩
+price: 600,000₩
 ---
 
 #### Specifications
